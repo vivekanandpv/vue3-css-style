@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p :style="{ 'font-size': '2rem', 'font-family': 'monospace' }">
+    <p :style="{ fontSize: '2rem', fontFamily: 'monospace' }">
       Learning CSS and style: Monospace font and big text
     </p>
   </div>
