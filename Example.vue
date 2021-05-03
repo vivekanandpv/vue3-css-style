@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p :class="[enabledMono ? 'mono-text' : 'blue-text', 'big-text']">
+    <p :style="{ 'font-size': '2rem', 'font-family': 'monospace' }">
       Learning CSS and style: Monospace font and big text
     </p>
   </div>
@@ -17,15 +17,4 @@ export default {
 </script>
 
 <style scoped>
-.mono-text {
-  font-family: monospace;
-}
-
-.blue-text {
-  color: blue;
-}
-
-.big-text {
-  font-size: 2rem;
-}
 </style>
