@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p :class="cssClassArray">
-      Learning CSS and style: Blue and monospace font
+    <p :class="enabledMono ? 'mono-text' : 'blue-text'">
+      Learning CSS and style: Monospace font
     </p>
   </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
   data: function () {
     return {
-      cssClassArray: ["blue-text", "mono-text"],
+      enabledMono: true,
     };
   },
 };
