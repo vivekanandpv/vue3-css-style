@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p :style="styleObject">
+    <p :style="[firstStyle, secondStyle]">
       Learning CSS and style: Monospace font and big text
     </p>
   </div>
@@ -10,7 +10,8 @@
 export default {
   data: function () {
     return {
-      styleObject: { fontSize: "2rem", fontFamily: "monospace" },
+      firstStyle: { fontSize: "2rem", fontFamily: "monospace" },
+      secondStyle: { color: "green", backgroundColor: "yellow" },
     };
   },
 };
