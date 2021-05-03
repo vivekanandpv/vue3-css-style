@@ -1,7 +1,8 @@
 <template>
   <div>
-    <p :class="{ 'red-text': enableRed }">Learning CSS and style: Red?</p>
-    <p :class="{ 'blue-text': enableBlue }">Learning CSS and style: Blue?</p>
+    <p :class="cssClassArray">
+      Learning CSS and style: Blue and monospace font
+    </p>
   </div>
 </template>
 
@@ -9,16 +10,15 @@
 export default {
   data: function () {
     return {
-      enableRed: true,
-      enableBlue: false,
+      cssClassArray: ["blue-text", "mono-text"],
     };
   },
 };
 </script>
 
 <style scoped>
-.red-text {
-  color: red;
+.mono-text {
+  font-family: monospace;
 }
 
 .blue-text {
